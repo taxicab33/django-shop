@@ -1,0 +1,38 @@
+{% load dict_tags %}
+<div class="column col-3 p-0 ">
+    <h3 class="m-0 mb-2 p-0">Фильтры</h3>
+    <form action="{{category.get_absolute_url}}" method="get">
+        {% for prop in category_props %}
+        {% if prop.parent is None%}
+        <div class="my-3 p-0">
+            <h5 >{{prop.name}}</h5>
+            {%for sub_prop in category_props%}
+            {%if sub_prop.parent == prop%}
+            <div class="m-0 p-0">
+                <p class="m-2">{{sub_prop.name}}</p>
+                <ul class="list-group">
+                    <div data-bs-spy="scroll" data-bs-offset="0" class="scrollspy-example">
+                        {%for value in category_props_values%}
+                            {%if value.property == sub_prop%}
+                                <li>
+                                    {%if value.value in picked_filters|get_item:value.property.name %}
+                                    <input value="{{value.value}}" type="checkbox" checked="checked"
+                                           name="{{value.property.name}}" onchange="this.form.submit()">
+                                    {%else%}
+                                    <input value="{{value.value}}" type="checkbox" name="{{value.property.name}}"
+                                           onchange="this.form.submit()">
+                                    {%endif%}
+                                    {{value.value}} ({{value.count_products}})
+                                </li>
+                            {%endif%}
+                        {%endfor%}
+                    </div>
+                </ul>
+            </div>
+            {%endif%}
+        {%endfor%}
+        </div>
+        {%endif%}
+    {% endfor %}
+    </form>
+</div>

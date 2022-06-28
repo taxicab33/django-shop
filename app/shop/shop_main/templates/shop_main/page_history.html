@@ -1,0 +1,9 @@
+<p class="p-0 my-4 pages-story">
+    <a href="{% url 'main' %}">Главная</a>
+    {%for parent in category.get_parents %}
+        {%if parent != category %}
+    &#10132; <a href="{{parent.get_absolute_url}}">{{parent.name}}</a>
+        {%endif%}
+    {%endfor%}
+    &#10132; <a>{{category.name}}</a>
+</p>

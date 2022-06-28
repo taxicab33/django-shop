@@ -1,0 +1,19 @@
+{%extends 'shop_main/base.html'%}
+{%block content %}
+<div class="container column">
+    {%include 'shop_main/page_history.html'%} <!-- навигация по категориям -->
+    {% if category.get_children.count != 0 %}
+    {%include 'shop_main/sub_categories.html'%} <!-- подкатегории текущей категории, если имеются -->
+    {%else%}
+    <h3 class="">{{category.name }}
+        <span class="count-products">
+            {{ page_obj.end_index }} из {{ page_obj.paginator.count }} товаров
+        </span>
+    </h3>
+    <div class="container row p-0 mt-5">
+        {%include 'shop_main/filters.html'%} <!-- фильтры -->
+        {%include 'shop_main/products_list.html'%} <!-- список товаров -->
+    </div>
+    {%endif%}
+</div>
+{%endblock%}

@@ -1,0 +1,40 @@
+<div class="container row p-3 col-12" id="catalog" >
+	<div class="main-categories scroll pt-3 col-3">
+	{% for cat in cats%}
+		{%if cat.parent.id == null %}
+		<p>
+			<a class="mt-2 main-category" id='{{cat.id}}' href="{{cat.get_absolute_url}}">{{cat.name}}</a>
+		</p>
+		{%endif%}
+	{%endfor%}
+	</div>
+	<div class="sub-categories scroll col-9">
+	{% for cat in cats%}
+		{%if cat.parent.id == null %}
+		<div class="sub-cat-list d-none row" id='parent-{{cat.id}}'>
+			<div class="col-4 list">
+				<ul class="p-0">
+			{% for child in cat.get_children %}
+				{%if child.get_children.count == 0%}
+					<li class="mt-1 mb-2"><a href="{{child.get_absolute_url}}">{{child.name}}</a></li>
+				{%endif%}
+			{%endfor%}
+				</ul> <!-- Список категорий без подкатегорий -->
+			</div>
+			{% for child in cat.get_children %}
+				{%if child.get_children.count != 0%}
+			<div class="col-4 list">
+				<h6><a href="{{child.get_absolute_url}}">{{child.name}}</a></h6>
+				<ul class="p-0"> <!-- Список категорий с подкатегориями -->
+					{% for sub_cat in child.get_children %}
+					<li class="mt-1 mb-2"><a href="{{sub_cat.get_absolute_url}}">{{sub_cat.name}}</a></li>
+					{%endfor%}
+				</ul>
+			</div>
+				{%endif%}
+			{%endfor%}
+		</div>
+		{%endif%}
+	{%endfor%}
+	</div>
+</div>

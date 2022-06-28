@@ -1,0 +1,184 @@
+*{
+    color: black !important;
+    font-size: 16px;
+}
+a{
+    text-decoration: none;
+}
+
+
+
+.form-control{
+    border-width: 0 0 1px 0;
+    border-radius: 0px;
+    border-color: black;
+}
+
+.count-products{
+    margin-left: 20px;
+    font-size: 24px !important;
+    color: #B3B3B7 !important;
+    font-weight: 400 !important;
+}
+
+.icon_back {
+    border: transparent 1px solid !important;
+}
+
+.main-categories a{
+    transition: .3s;
+}
+
+.main-categories a:hover {
+    padding: 10px;
+    background: black;
+    color: white !important;
+    transition: .3s;
+}
+
+.wrap-list div{
+    self-align: center;
+}
+
+.wrap-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.object-image{
+    max-height: 50%;
+}
+
+.product-href:hover p{
+    color: #56A600 !important;
+}
+
+.product-href {
+    font-weight: 500 !important;
+    text-align: center;
+}
+
+.product-header{
+
+}
+
+.no-photo-block{
+    width: 150px;
+    height: 150px;
+    color: black;
+    background-color: #F8F8F8;
+    text-align: center;
+    padding: 100px;
+}
+
+.sub-categories{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start !important;
+    position: relative;
+    height: 100% !important;
+}
+
+.sub-categories a:hover{
+    color: #56A600 !important;
+    transition: .3s;
+}
+
+.pages-story, .pages-story a{
+    font-size: 18px !important;
+}
+
+.pages-story a:hover {
+
+    border-bottom: black solid 2px;
+}
+
+.price{
+    font-size: 24px !important;
+}
+
+.catalog-btn {
+    cursor: pointer;
+    margin: 0 !important;
+}
+.dropdownMenuButton{
+    height: 30px;
+    width: 200px;
+    padding: 0;
+    border: solid black 1px;
+    margin: 5px;
+
+}
+
+.active-cat{
+    font-size: 20px !important;
+    font-weight: 700;
+}
+
+.active-btn{
+    padding: 10px;
+    background: black;
+    color: white !important;
+    transition: .3s;
+}
+
+#catalog{
+    z-index: 1;
+    position: absolute;
+    background-color: #F8F8F8;
+    padding: 25px;
+    visibility: collapse;
+    transition: .5s;
+}
+div{
+    margin: 0 !important;
+    padding: 0 10px 0 10px !important;
+}
+img{
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+.list{
+    position: relative;
+    top: auto;
+}
+
+footer{
+    flex: 0 0 auto;
+    height: 100px;
+    background-color: #f8f8f8;
+}
+
+.open-catalog{
+    transition: .3s;
+    visibility: visible !important;
+}
+
+
+.scroll{
+    overflow-y: scroll;
+    max-height: 600px;
+    height: 600px;
+}
+
+ul li{
+    list-style-type: none;
+}
+
+.navbar {
+    background-color: transparent !important;
+}
+.navbar-brand{
+    color: black !important;
+    font-size: 46px;
+}
+.icon {
+    width: 15px;
+}
+
+.icon_back {
+    background: transparent !important;
+    cursor: pointer;
+}

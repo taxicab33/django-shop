@@ -1,0 +1,23 @@
+version: "3.9"
+
+services:
+
+  servis_db:
+    image: postgres
+    container_name: servis_db
+    environment:
+      - POSTGRES_HOST_AUTH_METHOD=trust
+      - POSTGRES_DB=django_shop_db
+
+  shop:
+    restart: always
+    build:
+      context: ./app
+    command: bash -c "python ./shop/manage.py migrate && python ./shop/manage.py loaddata ./shop/dump.json
+             && python ./shop/manage.py runserver 0.0.0.0:8000"
+    volumes:
+      - .:/usr/src/shop_app
+    ports:
+      - "8000:8000"
+    depends_on:
+      - servis_db

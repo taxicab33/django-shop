@@ -1,0 +1,60 @@
+{%load static%}
+<div class="container row mt-5">
+    <div class="col-3 main-categories p-0" id="sub-categories">
+        <ul class="p-0">
+            {% for child in category.get_children %}
+            <li class="my-2"><a href="{{child.get_absolute_url}}">{{child.name}}</a></li>
+            {%endfor%}
+        </ul>
+    </div>
+    <div class="col-9 row wrap-list">
+        {% for child in category.get_children %}
+        <div class="col-3">
+            <a class="product-href" href="{{child.get_absolute_url}}">
+                {% if child.image %}
+                <img class="object-image" src="{{child.image.url}}" alt="{{child.name}}">
+                {%else%}
+                <div class="no-photo-block">
+                    <p>Нет фото</p>
+                </div>
+                {%endif%}
+                <p class="mt-3">{{child.name}}</p>
+            </a>
+        </div>
+        {%endfor%}
+    </div>
+    <div class="container row">
+        <div class="col-3"></div>
+        <div class="col-9">
+        <hr>
+        {%for child in category.get_children%}
+            <div class="child-products mb-2 row wrap-list">
+                {%if child.products_exist %}
+                <h2 class="mb-5">{{child.name}}
+                    <a class="cat-href" href="{{child.get_absolute_url}}">
+                        Посмотреть все товары &#10132;
+                    </a>
+                </h2>
+                    {% for product in child.get_products|slice:':4' %}
+                        {%if product.cat == child%}
+                <div class="col-3">
+                    <a class="product-href" href="{{product.get_absolute_url}}">
+                            {% if product.image != False %}
+                        <img class="object-image" src="{{product.image.url}}" alt="{{product.name}}">
+                            {%else%}
+                        <div class="no-photo-block">
+                            <p>Нет фото</p>
+                        </div>
+                            {%endif%}
+                        <p class="mt-3">{{product.name}}</p>
+                        <p class="price mt-3">{{product.price}} ₽</p>
+                    </a>
+                </div>
+                        {%endif%}
+                    {%endfor%}
+                {%endif%}
+            </div>
+        {%endfor%}
+        </div>
+    </div>
+</div>

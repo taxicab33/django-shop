@@ -1,0 +1,72 @@
+{%extends 'shop_main/base.html'%}
+{%block content%}
+<div class="container column">
+    <div class="row cat-history">
+        <div class="col-4">
+        </div>
+        <div class="col-8">
+            <p class="p-0 my-4 pages-story">
+            {%for parent in product.cat.get_parents %}
+              <a href="{{parent.get_absolute_url}}">{{parent.name}}</a> /
+            {%endfor%}
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-4">
+            <img class="object-image" src="{{product.image.url}}" alt="">
+        </div>
+        <div class="col-8">
+            <h3>{{product.name}}</h3>
+            <p class="price">{{product.price}} ₽</p>
+            <button>В корзину</button>
+        </div>
+    </div>
+    <div class="mt-4 product-tabs">
+        <a class="mx-4" data-bs-toggle="collapse" href="#about_product" aria-expanded="false"
+           aria-controls="collapseExample">О товаре</a>
+        <a class="mx-4" data-bs-toggle="collapse" href="#characteristics" aria-expanded="false"
+           aria-controls="collapseExample">Характеристики</a>
+    </div>
+    <div class="underlined-block mb-3"></div>
+    <div class="product-info">
+        <div class="collapse" id="about_product">
+            <div class="row m-0">
+                <div class="col-4"><h3>Описание</h3></div>
+                <div class="col-8"><p>{{product.description}}</p></div>
+            </div>
+        </div>
+        <div class="collapse" id="characteristics">
+            <div class="row m-0">
+                <div class="col-4">
+                    *Для уточнения информации, наведите на характеристику товара
+                </div>
+                <div class="col-8">
+                    {%for prop in props%}
+                        {%if prop.parent == null%}
+                            <h3 title="{{prop.description}}">{{prop.name}}</h3>
+                            {%for child in props%}
+                                {%if child.parent == prop %}
+                                    {%for value in props_value%}
+                                        {%if value.property == child%}
+                                        <p class="props" title="{{child.description}}">
+                                            {{child.name}}: {{value.value}}
+                                        </p>
+                                        {%endif%}
+                                    {%endfor%}
+                                    {%if props_value.count == 0%}
+                                        <p class="props" title="{{child.description}}">
+                                            {{child.name}}: --
+                                        </p>
+                                    {%endif%}
+                                {%endif%}
+                            {%endfor%}
+                        {%endif%}
+                    {%endfor%}
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+{%endblock%}

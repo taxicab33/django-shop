@@ -1,0 +1,21 @@
+<div class="row">
+    {%for item in sorting_list %}
+    <div class="col">
+        <form action="{{request.path}}" method="get" class="row" >
+            <select class="form-select" name="sort" onchange="this.form.submit()">
+
+                {%if picked_sort_param == item.asc %}
+                <option value="{{item.asc}}" selected="selected">{{item.name}} по возрастанию</option>
+                <option value="{{item.desc}}">{{item.name}} по убыванию</option>
+                {%elif picked_sort_param == item.desc%}
+                <option value="{{item.asc}}">{{item.name}} по возрастанию</option>
+                <option value="{{item.desc}}" selected="selected">{{item.name}} по убыванию</option>
+                {%else%}
+                <option value="{{item.asc}}">{{item.name}} по возрастанию</option>
+                <option value="{{item.desc}}">{{item.name}} по убыванию</option>
+                {%endif%}
+            </select>
+        </form>
+    </div>
+    {%endfor%}
+</div>

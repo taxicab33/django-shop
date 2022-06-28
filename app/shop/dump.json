@@ -1,0 +1,1190 @@
+[
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2022-06-25T16:33:39.837Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "Компьютерная техника",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2022-06-25T16:34:40.693Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "Компьютерные комплектующие",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2022-06-25T16:34:58.404Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "Компьютерные комплектующие",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0420\\u043e\\u0434\\u0438\\u0442\\u0435\\u043b\\u044c\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2022-06-25T16:37:39.353Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "3",
+    "object_repr": "Ноутбуки",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2022-06-25T16:40:37.425Z",
+    "user": 2,
+    "content_type": 8,
+    "object_id": "1",
+    "object_repr": "Валидатор категории Компьютерная техника",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2022-06-25T16:40:37.433Z",
+    "user": 2,
+    "content_type": 8,
+    "object_id": "3",
+    "object_repr": "Валидатор категории Компьютерные комплектующие",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "action_time": "2022-06-25T16:40:37.433Z",
+    "user": 2,
+    "content_type": 8,
+    "object_id": "2",
+    "object_repr": "Валидатор категории Компьютерные комплектующие",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 8,
+  "fields": {
+    "action_time": "2022-06-25T16:40:37.434Z",
+    "user": 2,
+    "content_type": 8,
+    "object_id": "4",
+    "object_repr": "Валидатор категории Ноутбуки",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 9,
+  "fields": {
+    "action_time": "2022-06-25T16:45:20.019Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "4",
+    "object_repr": "Материнские платы",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 10,
+  "fields": {
+    "action_time": "2022-06-25T17:02:46.913Z",
+    "user": 2,
+    "content_type": 8,
+    "object_id": "5",
+    "object_repr": "Материнская плата ASUS PRIME H510M-K",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 11,
+  "fields": {
+    "action_time": "2022-06-25T17:03:28.151Z",
+    "user": 2,
+    "content_type": 8,
+    "object_id": "5",
+    "object_repr": "Материнская плата ASUS PRIME H510M-K",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 12,
+  "fields": {
+    "action_time": "2022-06-25T17:04:14.144Z",
+    "user": 2,
+    "content_type": 8,
+    "object_id": "6",
+    "object_repr": "Скидка на услугу Материнская плата GIGABYTE Z590 GAMING X",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 13,
+  "fields": {
+    "action_time": "2022-06-25T17:05:40.772Z",
+    "user": 2,
+    "content_type": 8,
+    "object_id": "7",
+    "object_repr": "Материнская плата ASUS ROG STRIX Z590-F GAMING WIFI",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 14,
+  "fields": {
+    "action_time": "2022-06-25T17:06:23.602Z",
+    "user": 2,
+    "content_type": 9,
+    "object_id": "1",
+    "object_repr": "Процессоры",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 15,
+  "fields": {
+    "action_time": "2022-06-25T17:06:46.563Z",
+    "user": 2,
+    "content_type": 9,
+    "object_id": "2",
+    "object_repr": "Гнездо процессора",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 16,
+  "fields": {
+    "action_time": "2022-06-25T17:07:13.097Z",
+    "user": 2,
+    "content_type": 10,
+    "object_id": "1",
+    "object_repr": "Гнездо процессора Скидка на услугу Материнская плата GIGABYTE Z590 GAMING X",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 17,
+  "fields": {
+    "action_time": "2022-06-26T07:20:32.432Z",
+    "user": 2,
+    "content_type": 8,
+    "object_id": "6",
+    "object_repr": "Материнская плата GIGABYTE Z590 GAMING X",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u041d\\u0430\\u0437\\u0432\\u0430\\u043d\\u0438\\u0435\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 18,
+  "fields": {
+    "action_time": "2022-06-26T08:04:22.480Z",
+    "user": 2,
+    "content_type": 9,
+    "object_id": "1",
+    "object_repr": "Процессор",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0425\\u0430\\u0440\\u0430\\u043a\\u0442\\u0435\\u0440\\u0438\\u0441\\u0442\\u0438\\u043a\\u0430\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 19,
+  "fields": {
+    "action_time": "2022-06-26T08:28:19.223Z",
+    "user": 2,
+    "content_type": 10,
+    "object_id": "2",
+    "object_repr": "Гнездо процессора Материнская плата ASUS PRIME H510M-K",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 20,
+  "fields": {
+    "action_time": "2022-06-26T08:29:01.649Z",
+    "user": 2,
+    "content_type": 9,
+    "object_id": "3",
+    "object_repr": "Оперативная память",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 21,
+  "fields": {
+    "action_time": "2022-06-26T08:29:22.114Z",
+    "user": 2,
+    "content_type": 9,
+    "object_id": "4",
+    "object_repr": "Частотная спецификация памяти",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 22,
+  "fields": {
+    "action_time": "2022-06-26T08:29:44.680Z",
+    "user": 2,
+    "content_type": 9,
+    "object_id": "5",
+    "object_repr": "Максимальный объем оперативной памяти",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 23,
+  "fields": {
+    "action_time": "2022-06-26T08:30:10.865Z",
+    "user": 2,
+    "content_type": 10,
+    "object_id": "3",
+    "object_repr": "Частотная спецификация памяти Материнская плата ASUS PRIME H510M-K",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 24,
+  "fields": {
+    "action_time": "2022-06-26T08:30:22.319Z",
+    "user": 2,
+    "content_type": 10,
+    "object_id": "4",
+    "object_repr": "Частотная спецификация памяти Материнская плата GIGABYTE Z590 GAMING X",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 25,
+  "fields": {
+    "action_time": "2022-06-26T10:14:09.424Z",
+    "user": 2,
+    "content_type": 10,
+    "object_id": "4",
+    "object_repr": "Частотная спецификация памяти Материнская плата GIGABYTE Z590 GAMING X",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0417\\u043d\\u0430\\u0447\\u0435\\u043d\\u0438\\u0435\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 26,
+  "fields": {
+    "action_time": "2022-06-28T11:10:10.454Z",
+    "user": 2,
+    "content_type": 8,
+    "object_id": "8",
+    "object_repr": "Материнская плата ASROCK A320M-DVS R4.0",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 27,
+  "fields": {
+    "action_time": "2022-06-28T11:10:50.881Z",
+    "user": 2,
+    "content_type": 10,
+    "object_id": "5",
+    "object_repr": "Частотная спецификация памяти Материнская плата ASROCK A320M-DVS R4.0",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 28,
+  "fields": {
+    "action_time": "2022-06-28T11:11:05.299Z",
+    "user": 2,
+    "content_type": 10,
+    "object_id": "6",
+    "object_repr": "Максимальный объем оперативной памяти Материнская плата ASROCK A320M-DVS R4.0",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 29,
+  "fields": {
+    "action_time": "2022-06-28T11:15:04.399Z",
+    "user": 2,
+    "content_type": 10,
+    "object_id": "7",
+    "object_repr": "Гнездо процессора Материнская плата ASROCK A320M-DVS R4.0",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 30,
+  "fields": {
+    "action_time": "2022-06-28T11:21:16.690Z",
+    "user": 2,
+    "content_type": 10,
+    "object_id": "8",
+    "object_repr": "Максимальный объем оперативной памяти Материнская плата ASUS PRIME H510M-K",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 31,
+  "fields": {
+    "action_time": "2022-06-28T11:21:25.244Z",
+    "user": 2,
+    "content_type": 10,
+    "object_id": "9",
+    "object_repr": "Максимальный объем оперативной памяти Материнская плата GIGABYTE Z590 GAMING X",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 32,
+  "fields": {
+    "action_time": "2022-06-28T13:24:40.970Z",
+    "user": 2,
+    "content_type": 10,
+    "object_id": "10",
+    "object_repr": "Максимальный объем оперативной памяти Материнская плата ASUS ROG STRIX Z590-F GAMING WIFI",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 33,
+  "fields": {
+    "action_time": "2022-06-28T13:25:10.545Z",
+    "user": 2,
+    "content_type": 10,
+    "object_id": "11",
+    "object_repr": "Гнездо процессора Материнская плата ASUS ROG STRIX Z590-F GAMING WIFI",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 34,
+  "fields": {
+    "action_time": "2022-06-28T13:25:39.470Z",
+    "user": 2,
+    "content_type": 10,
+    "object_id": "12",
+    "object_repr": "Частотная спецификация памяти Материнская плата ASUS ROG STRIX Z590-F GAMING WIFI",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 1,
+  "fields": {
+    "name": "Can add log entry",
+    "content_type": 1,
+    "codename": "add_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 2,
+  "fields": {
+    "name": "Can change log entry",
+    "content_type": 1,
+    "codename": "change_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 3,
+  "fields": {
+    "name": "Can delete log entry",
+    "content_type": 1,
+    "codename": "delete_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 4,
+  "fields": {
+    "name": "Can view log entry",
+    "content_type": 1,
+    "codename": "view_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 5,
+  "fields": {
+    "name": "Can add permission",
+    "content_type": 2,
+    "codename": "add_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 6,
+  "fields": {
+    "name": "Can change permission",
+    "content_type": 2,
+    "codename": "change_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 7,
+  "fields": {
+    "name": "Can delete permission",
+    "content_type": 2,
+    "codename": "delete_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 8,
+  "fields": {
+    "name": "Can view permission",
+    "content_type": 2,
+    "codename": "view_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 9,
+  "fields": {
+    "name": "Can add group",
+    "content_type": 3,
+    "codename": "add_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 10,
+  "fields": {
+    "name": "Can change group",
+    "content_type": 3,
+    "codename": "change_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 11,
+  "fields": {
+    "name": "Can delete group",
+    "content_type": 3,
+    "codename": "delete_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 12,
+  "fields": {
+    "name": "Can view group",
+    "content_type": 3,
+    "codename": "view_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 13,
+  "fields": {
+    "name": "Can add user",
+    "content_type": 4,
+    "codename": "add_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 14,
+  "fields": {
+    "name": "Can change user",
+    "content_type": 4,
+    "codename": "change_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 15,
+  "fields": {
+    "name": "Can delete user",
+    "content_type": 4,
+    "codename": "delete_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 16,
+  "fields": {
+    "name": "Can view user",
+    "content_type": 4,
+    "codename": "view_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 17,
+  "fields": {
+    "name": "Can add content type",
+    "content_type": 5,
+    "codename": "add_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 18,
+  "fields": {
+    "name": "Can change content type",
+    "content_type": 5,
+    "codename": "change_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 19,
+  "fields": {
+    "name": "Can delete content type",
+    "content_type": 5,
+    "codename": "delete_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 20,
+  "fields": {
+    "name": "Can view content type",
+    "content_type": 5,
+    "codename": "view_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 21,
+  "fields": {
+    "name": "Can add session",
+    "content_type": 6,
+    "codename": "add_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 22,
+  "fields": {
+    "name": "Can change session",
+    "content_type": 6,
+    "codename": "change_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 23,
+  "fields": {
+    "name": "Can delete session",
+    "content_type": 6,
+    "codename": "delete_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 24,
+  "fields": {
+    "name": "Can view session",
+    "content_type": 6,
+    "codename": "view_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 25,
+  "fields": {
+    "name": "Can add Категории товаров",
+    "content_type": 7,
+    "codename": "add_category"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 26,
+  "fields": {
+    "name": "Can change Категории товаров",
+    "content_type": 7,
+    "codename": "change_category"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 27,
+  "fields": {
+    "name": "Can delete Категории товаров",
+    "content_type": 7,
+    "codename": "delete_category"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 28,
+  "fields": {
+    "name": "Can view Категории товаров",
+    "content_type": 7,
+    "codename": "view_category"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 29,
+  "fields": {
+    "name": "Can add Товары",
+    "content_type": 8,
+    "codename": "add_product"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 30,
+  "fields": {
+    "name": "Can change Товары",
+    "content_type": 8,
+    "codename": "change_product"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 31,
+  "fields": {
+    "name": "Can delete Товары",
+    "content_type": 8,
+    "codename": "delete_product"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 32,
+  "fields": {
+    "name": "Can view Товары",
+    "content_type": 8,
+    "codename": "view_product"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 33,
+  "fields": {
+    "name": "Can add Характеристика",
+    "content_type": 9,
+    "codename": "add_categoryproperty"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 34,
+  "fields": {
+    "name": "Can change Характеристика",
+    "content_type": 9,
+    "codename": "change_categoryproperty"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 35,
+  "fields": {
+    "name": "Can delete Характеристика",
+    "content_type": 9,
+    "codename": "delete_categoryproperty"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 36,
+  "fields": {
+    "name": "Can view Характеристика",
+    "content_type": 9,
+    "codename": "view_categoryproperty"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 37,
+  "fields": {
+    "name": "Can add Значение",
+    "content_type": 10,
+    "codename": "add_categorypropertyvalue"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 38,
+  "fields": {
+    "name": "Can change Значение",
+    "content_type": 10,
+    "codename": "change_categorypropertyvalue"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 39,
+  "fields": {
+    "name": "Can delete Значение",
+    "content_type": 10,
+    "codename": "delete_categorypropertyvalue"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 40,
+  "fields": {
+    "name": "Can view Значение",
+    "content_type": 10,
+    "codename": "view_categorypropertyvalue"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$260000$smzdeFNcIux5ZuTMjV6Jpz$78eCHuXBmzk4BYoGvHM3MFIWC0m2WuNWV3akoLGjl5Q=",
+    "last_login": null,
+    "is_superuser": true,
+    "username": "nikon",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2022-06-25T16:26:20.658Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 2,
+  "fields": {
+    "password": "pbkdf2_sha256$260000$d6LrpbUtoTn6GboY9lE1Zw$gHtLbx0TqBBrVFlJpab8mAsWeXGbhbDQTWuXMlIEf1o=",
+    "last_login": "2022-06-28T11:08:55.321Z",
+    "is_superuser": true,
+    "username": "root",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2022-06-25T16:26:38.923Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 1,
+  "fields": {
+    "app_label": "admin",
+    "model": "logentry"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 2,
+  "fields": {
+    "app_label": "auth",
+    "model": "permission"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 3,
+  "fields": {
+    "app_label": "auth",
+    "model": "group"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 4,
+  "fields": {
+    "app_label": "auth",
+    "model": "user"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 5,
+  "fields": {
+    "app_label": "contenttypes",
+    "model": "contenttype"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 6,
+  "fields": {
+    "app_label": "sessions",
+    "model": "session"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 7,
+  "fields": {
+    "app_label": "shop_main",
+    "model": "category"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 8,
+  "fields": {
+    "app_label": "shop_main",
+    "model": "product"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 9,
+  "fields": {
+    "app_label": "shop_main",
+    "model": "categoryproperty"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 10,
+  "fields": {
+    "app_label": "shop_main",
+    "model": "categorypropertyvalue"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "nlvsc4t275leus6djii82s3gd8487mcs",
+  "fields": {
+    "session_data": ".eJxVjDkOwjAUBe_iGlk4ljdKes5g_c04gBwpTirE3UmkFNC-mXlvlWFdal67zHlkdVGDOv1uCPSUtgN-QLtPmqa2zCPqXdEH7fo2sbyuh_t3UKHXrY6MwtGnYpJHCufoCxX0gZywZcJkykA2WrtJQQqBKUgQxLIlh47V5wsZQDmb:1o58cO:MbU_r2JLB8n0Y_sNDTHpfnewT-z5o3BfYd2OTKcK39Q",
+    "expire_date": "2022-07-09T16:26:44.897Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "npi558zgsm8on6dqylo0yfjs7tlvxm23",
+  "fields": {
+    "session_data": ".eJxVjDkOwjAUBe_iGlk4ljdKes5g_c04gBwpTirE3UmkFNC-mXlvlWFdal67zHlkdVGDOv1uCPSUtgN-QLtPmqa2zCPqXdEH7fo2sbyuh_t3UKHXrY6MwtGnYpJHCufoCxX0gZywZcJkykA2WrtJQQqBKUgQxLIlh47V5wsZQDmb:1o695T:1www8MGc1h9X-0RM_oi96YscWKoFIx4FwCASdX7ZfC4",
+    "expire_date": "2022-07-12T11:08:55.329Z"
+  }
+},
+{
+  "model": "shop_main.product",
+  "pk": 5,
+  "fields": {
+    "name": "Материнская плата ASUS PRIME H510M-K",
+    "slug": "materinskaya-plata-asus-prime-h510m-k16561765669105053",
+    "price": 5120,
+    "cat": 4,
+    "description": "Для оптимальной работы компьютера подойдет материнская плата ASUS PRIME H510M-K с сокетом LGA 1200 и частотной спецификацией памяти 2933 МГц. Надежность материнской платы подтверждает гарантия от производителя на 36 месяцев. На задней панели материнской платы имеются разъемы USB 3.0, USB 2.0, D-Sub (VGA), HDMI, а также PS/2 для подключения мыши и клавиатуры. Для подключения накопителей предусмотрены дисковые контроллеры SATA3 и М.2.\r\n\r\nСреди дополнительных особенностей материнской платы ASUS PRIME H510M-K, выполненной в форм-факторе mATX, стоит отметить слоты PCI-E 4.0 x16 и PCI-E x1 для подключения плат расширения. Предусмотрен двухканальный режим работы оперативной памяти, который обеспечивает увеличение ее пропускной способности в 2 раза.",
+    "is_published": true,
+    "image": "products_images/1-mat_X6fhQJx.jpg",
+    "user": 2
+  }
+},
+{
+  "model": "shop_main.product",
+  "pk": 6,
+  "fields": {
+    "name": "Материнская плата GIGABYTE Z590 GAMING X",
+    "slug": "skidka-na-uslugu-materinskaya-plata-gigabyte-z590-gaming-x16561766541422796",
+    "price": 13990,
+    "cat": 4,
+    "description": "Материнская плата Gigabyte Z590 GAMING X для подключения процессора имеет гнездо LGA 1200. Совместимость с процессорами следует уточнять заблаговременно на сайте производителя. Тут реализована поддержка CrossFire. Тип поддерживаемой оперативной памяти - DIMM. Частотная спецификация равна 2933 МГц. О том, какие модули памяти поддерживаются оборудованием, можно узнать на сайте производителя.\r\n\r\nВсего предусмотрено в материнской плате Gigabyte Z590 GAMING X четыре слота памяти DDR4. Максимальный объем оперативной памяти равен 128 Гб. Ее работа осуществляется в двухканальном режиме. На задней панели расположены разъемы для подключения внешнего оборудования. Это разъем PS/2, который служит для подключения мыши или клавиатуры. Есть 9 портов USB, а также один разъем Display Port. Сетевой интерфейс здесь 2.5Gigabit, а сетевой контроллер - Realtek. Представлен восьмиканальный звук (7.1).\r\n\r\nСообщить об ошибке в описании",
+    "is_published": true,
+    "image": "products_images/3-mat_RZRPfXY.jpg",
+    "user": 2
+  }
+},
+{
+  "model": "shop_main.product",
+  "pk": 7,
+  "fields": {
+    "name": "Материнская плата ASUS ROG STRIX Z590-F GAMING WIFI",
+    "slug": "materinskaya-plata-asus-rog-strix-z590-f-gaming-wifi165617674076945",
+    "price": 19990,
+    "cat": 4,
+    "description": "к игровой серии и позволит собрать весьма производительный ПК. Выполнена в форм-факторе АTX с гнездом процессора LGA 1200. Предназначена для установки в полноразмерные, стандартные корпуса.\r\n\r\nМатеринская плата ASUS ROG STRIX Z590-F GAMING WIFI поддерживает двухканальную оперативную память, объем которой может быть до 128 Гб, с частотной спецификацией 3200 МГц. Для ее установки предусмотрено 4 слота. Для установки видеокарт предусмотрены слоты PCI-E 3.0 x16 и PCI-E 4.0 x16. Есть и поддержка Intel Optane. Предусмотрен набор разъемов, размещенных на задней панели. Питание материнской платы и процессора организовано по схеме 24+8+4 pin.",
+    "is_published": true,
+    "image": "products_images/4-mat_9jNAhJ9.jpg",
+    "user": 2
+  }
+},
+{
+  "model": "shop_main.product",
+  "pk": 8,
+  "fields": {
+    "name": "Материнская плата ASROCK A320M-DVS R4.0",
+    "slug": "materinskaya-plata-asrock-a320m-dvs-r4016564146104496274",
+    "price": 2880,
+    "cat": 4,
+    "description": "С использованием материнской платы ASROCK A320M-DVS R4.0 можно собрать компактный компьютер, подходящий для универсального использования. Она соответствует форм-фактору Micro-ATX, имеет габаритные размеры 230x201 мм. В основе модели – популярный чипсет AMD A320. Доступно пополнение до 32 Гб памяти DDR4. Слот PCI-E x16 дает возможность установить производительный видеоадаптер. Она изготовлена из высококачественных компонентов и совместима с процессорами AMD RYZEN\r\n\r\nПлата ASROCK A320M-DVS R4.0 обладает звуковой подсистемой, базирующейся на чипсете Realtek ALC887. Высокому качеству звука способствует наличие аудиоконденсаторов ELNA. Проводной доступ к сетевым ресурсам организуется благодаря функционированию гигабитного контроллера. В устройстве предусмотрен набор портов и разъемов, количество которых достаточно для решения типовых задач. Многим пользователям будет полезен комбинированный порт PS/2. Технология ASRock Full Spike Protection надежно защищает эти компоненты материнской платы от внезапных скачков напряжения.",
+    "is_published": true,
+    "image": "products_images/1-mat_X6fhQJx_3Q94acv.jpg",
+    "user": 2
+  }
+},
+{
+  "model": "shop_main.category",
+  "pk": 1,
+  "fields": {
+    "name": "Компьютерная техника",
+    "slug": "kompyuternaya-tehnika",
+    "parent": null,
+    "image": ""
+  }
+},
+{
+  "model": "shop_main.category",
+  "pk": 2,
+  "fields": {
+    "name": "Компьютерные комплектующие",
+    "slug": "kompyuternyie-komplektuyuschie",
+    "parent": 1,
+    "image": "category_images/9d480ed9-9378-4208-9bb1-06bd9cc8ee01_GS1kbWd.png"
+  }
+},
+{
+  "model": "shop_main.category",
+  "pk": 3,
+  "fields": {
+    "name": "Ноутбуки",
+    "slug": "noutbuki",
+    "parent": 1,
+    "image": "category_images/Без_названия.jpg"
+  }
+},
+{
+  "model": "shop_main.category",
+  "pk": 4,
+  "fields": {
+    "name": "Материнские платы",
+    "slug": "materinskie-platyi",
+    "parent": 2,
+    "image": "category_images/moms_xkSCIl8.jpg"
+  }
+},
+{
+  "model": "shop_main.categoryproperty",
+  "pk": 1,
+  "fields": {
+    "name": "Процессор",
+    "parent": null,
+    "description": "",
+    "category": 4
+  }
+},
+{
+  "model": "shop_main.categoryproperty",
+  "pk": 2,
+  "fields": {
+    "name": "Гнездо процессора",
+    "parent": 1,
+    "description": "Тип гнезда для установки процессора. От типа сокета зависит какую серию процессоров можно установить в материнскую плату. Материнские платы для процессоров INTEL имеют socket LGA775, LGA1155, LGA1156, LGA1366. Обозначение LGA означает, что сам процессор не имеет ножек, которые установлены на сокете материнской платы. Данные сокеты не имеют совместимости, т.е. процессор LGA1156 не получится установить в материнскую плату с сокетом LGA775. Материнские платы для процессоров AMD имеют socket AM2, AM2+, AM3, AM3+, FM1. Процессоры с Socket AM2 полностью совместимы с материнскими платами AM2 и AM2+. Если процессор имеет socket AM2+, то его совместимость с материнскими платами AM2 не гарантирована и необходимо проверить совместимость на сайте производителя материнской платы. Процессоры с socket AM3 будут работать на материнских платах с гнездом AM2+, обратная совместимость не возможна процессоры AM2, AM2+ не будут работать на материнских платах AM3.",
+    "category": 4
+  }
+},
+{
+  "model": "shop_main.categoryproperty",
+  "pk": 3,
+  "fields": {
+    "name": "Оперативная память",
+    "parent": null,
+    "description": "",
+    "category": 4
+  }
+},
+{
+  "model": "shop_main.categoryproperty",
+  "pk": 4,
+  "fields": {
+    "name": "Частотная спецификация памяти",
+    "parent": 3,
+    "description": "Максимальная частота оперативной памяти, поддерживаемая каждой конкретной материнской платой. Если материнская плата поддерживает максимальную частоту 1333 МГц, то если установить в нее память с частотой 1600 МГц, то эта память будет работать на частоте 1333 МГц.",
+    "category": 4
+  }
+},
+{
+  "model": "shop_main.categoryproperty",
+  "pk": 5,
+  "fields": {
+    "name": "Максимальный объем оперативной памяти",
+    "parent": 3,
+    "description": "Максимальный объем оперативной памяти, который поддерживается материнской платой. Данное значение зависит от количества слотов для установки оперативной памяти.",
+    "category": 4
+  }
+},
+{
+  "model": "shop_main.categorypropertyvalue",
+  "pk": 1,
+  "fields": {
+    "value": "LGA 1200",
+    "property": 2,
+    "product": 6
+  }
+},
+{
+  "model": "shop_main.categorypropertyvalue",
+  "pk": 2,
+  "fields": {
+    "value": "SocketAM4",
+    "property": 2,
+    "product": 5
+  }
+},
+{
+  "model": "shop_main.categorypropertyvalue",
+  "pk": 3,
+  "fields": {
+    "value": "3200 МГц",
+    "property": 4,
+    "product": 5
+  }
+},
+{
+  "model": "shop_main.categorypropertyvalue",
+  "pk": 4,
+  "fields": {
+    "value": "2933 МГц",
+    "property": 4,
+    "product": 6
+  }
+},
+{
+  "model": "shop_main.categorypropertyvalue",
+  "pk": 5,
+  "fields": {
+    "value": "3200 МГц",
+    "property": 4,
+    "product": 8
+  }
+},
+{
+  "model": "shop_main.categorypropertyvalue",
+  "pk": 6,
+  "fields": {
+    "value": "32 ГБ",
+    "property": 5,
+    "product": 8
+  }
+},
+{
+  "model": "shop_main.categorypropertyvalue",
+  "pk": 7,
+  "fields": {
+    "value": "SocketAM4",
+    "property": 2,
+    "product": 8
+  }
+},
+{
+  "model": "shop_main.categorypropertyvalue",
+  "pk": 8,
+  "fields": {
+    "value": "32 ГБ",
+    "property": 5,
+    "product": 5
+  }
+},
+{
+  "model": "shop_main.categorypropertyvalue",
+  "pk": 9,
+  "fields": {
+    "value": "32 ГБ",
+    "property": 5,
+    "product": 6
+  }
+},
+{
+  "model": "shop_main.categorypropertyvalue",
+  "pk": 10,
+  "fields": {
+    "value": "128 ГБ",
+    "property": 5,
+    "product": 7
+  }
+},
+{
+  "model": "shop_main.categorypropertyvalue",
+  "pk": 11,
+  "fields": {
+    "value": "LGA 1200",
+    "property": 2,
+    "product": 7
+  }
+},
+{
+  "model": "shop_main.categorypropertyvalue",
+  "pk": 12,
+  "fields": {
+    "value": "3600 МГц",
+    "property": 4,
+    "product": 7
+  }
+}
+]
