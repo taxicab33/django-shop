@@ -1,5 +1,3 @@
-from django.db.models import Q
-
 from shop_main.models import *
 from shop_main.services import create_sorting_list, compare_props_values, get_products_with_props_values, \
     manage_product_list_params
@@ -24,7 +22,7 @@ class DataMixin:
         return values
 
     def product_list(self):
-        """Filter queryset by request's params"""
+        """Filtering queryset by request's params"""
         cat = Category.objects.get(slug=self.kwargs['cat_slug'])
         params_list = dict(self.request.GET)
         return manage_product_list_params(params_list, cat)

@@ -55,7 +55,7 @@ def get_products_with_props_values(params_list, req_props_values):
 
 
 def manage_product_list_params(params_list, cat):
-    """Manage params_list for queryset"""
+    """Managing params_list for queryset"""
     sort_param = ''
     # проверяем наличие праметра сортировки
     if params_list.get('sort'):
