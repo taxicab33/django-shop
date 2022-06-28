@@ -24,6 +24,7 @@ class DataMixin:
 
     @classmethod
     def filter_product_list(cls, params_list, cat):
+        """Filter queryset by request's params"""
         # значения характеристик в параметрах запроса
         req_props_values = CategoryPropertyValue.objects.filter(property__name__in=params_list.keys(),
                                                                 product__cat=cat)
@@ -58,7 +59,7 @@ class DataMixin:
         return products
 
     def product_list(self):
-        """Filter queryset by request's params"""
+        """Get product_list with filters/sorting params"""
         cat = Category.objects.get(slug=self.kwargs['cat_slug'])
         params_list = dict(self.request.GET)
         sort_param = ''
