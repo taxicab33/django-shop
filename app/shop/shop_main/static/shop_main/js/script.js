@@ -57,6 +57,11 @@ function show_sub_categories(){
     }
 }
 
+function doSubmit(id){
+    f = document.getElementById(id);
+    f.submit();
+    }
+
 $(function() {
     $('.catalog-btn').click(open_catalog);
     $('#catalog').mouseleave(open_catalog);

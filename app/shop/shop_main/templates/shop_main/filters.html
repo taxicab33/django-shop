@@ -1,7 +1,7 @@
 {% load dict_tags %}
 <div class="column col-3 p-0 ">
     <h3 class="m-0 mb-2 p-0">Фильтры</h3>
-    <form action="{{category.get_absolute_url}}" method="get">
+    <form action="{{category.get_absolute_url}}" method="get" id="filter-form">
         {% for prop in category_props %}
         {% if prop.parent is None%}
         <div class="my-3 p-0">
@@ -17,10 +17,10 @@
                                 <li>
                                     {%if value.slug in picked_filters|get_item:value.property.slug %}
                                     <input value="{{value.slug}}" type="checkbox" checked="checked"
-                                           name="{{value.property.slug}}" onchange="this.form.submit()">
+                                           name="{{value.property.slug}}" onchange="doSubmit('filter-form')">
                                     {%else%}
                                     <input value="{{value.slug}}" type="checkbox" name="{{value.property.slug}}"
-                                           onchange="this.form.submit()">
+                                           onchange="doSubmit('filter-form')">
                                     {%endif%}
                                     {{value.value}} ({{value.count_products}})
                                 </li>

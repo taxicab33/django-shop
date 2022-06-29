@@ -1,8 +1,8 @@
 <div class="row">
     {%for item in sorting_list %}
     <div class="col mx-3">
-        <form action="{{request.path}}" method="get" class="row" >
-            <select class="form-select" name="sort" onchange="this.form.submit()">
+        <form action="{{request.path}}" method="get" class="row" id="sort-by-{{item.asc}}-form">
+            <select class="form-select" name="sort" onchange="doSubmit('sort-by-{{item.asc}}-form')">
 
                 {%if picked_sort_param == item.asc %}
                 <option value="{{item.asc}}" selected="selected">{{item.name}} по возрастанию</option>
