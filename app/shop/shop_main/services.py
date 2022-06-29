@@ -16,7 +16,7 @@ def create_sorting_list():
 
 def compare_props_values(params_list, cat):
     # значения характеристик в параметрах запроса
-    req_props_values = CategoryPropertyValue.objects.filter(property__name__in=params_list.keys(),
+    req_props_values = CategoryPropertyValue.objects.filter(property__slug__in=params_list.keys(),
                                                             product__cat=cat)
     # значение всех характеристик продуктов, имеющих значения характеристик в параметрах запроса
     products_all_values = CategoryPropertyValue.objects.filter(product__in=req_props_values.values('product'))
@@ -28,7 +28,7 @@ def compare_props_values(params_list, cat):
         product_prop_value_dict = {}
         for product_prop_value in products_all_values:
             if product_prop_value.product == product:
-                prop_value = {f'{product_prop_value.property.name}': product_prop_value.value}
+                prop_value = {f'{product_prop_value.property.slug}': product_prop_value.slug}
                 product_prop_value_dict.update(prop_value)
         # сравниваем со списком фильтров
         coincidence = 0
@@ -42,7 +42,7 @@ def compare_props_values(params_list, cat):
 
 
 def get_products_with_props_values(params_list, req_props_values):
-    """Gets products with props and value from params_list"""
+    """Gets products with props and values from params_list"""
     if params_list.get('sort'):
         not_filtered_products = Product.objects.filter(pk__in=req_props_values.values('product')) \
             .order_by(params_list.get('sort')[0])

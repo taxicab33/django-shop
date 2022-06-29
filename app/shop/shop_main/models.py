@@ -18,7 +18,7 @@ class Product(models.Model):
 
     def save(self, *args, **kwargs):
         if not self.id:
-            self.slug = slugify(str(self.name) + str(time()))
+            self.slug = slugify(str(self.name))
         super().save(*args, **kwargs)
 
     def __str__(self):
@@ -94,6 +94,12 @@ class CategoryProperty(models.Model):
     parent = models.ForeignKey('self', verbose_name='Родитель', on_delete=models.PROTECT, blank=True, null=True)
     description = models.TextField(verbose_name="Описание характеристики", null=True, blank=True)
     category = models.ForeignKey('Category', on_delete=models.PROTECT, verbose_name='Категория')
+    slug = models.SlugField(max_length=255, db_index=True, verbose_name="Слаг параметра", default="")
+
+    def save(self, *args, **kwargs):
+        if not self.id:
+            self.slug = slugify(str(self.name))
+        super().save(*args, **kwargs)
 
     class Meta:
         verbose_name = 'Характеристика'
@@ -108,6 +114,12 @@ class CategoryPropertyValue(models.Model):
     value = models.CharField(max_length=255, verbose_name='Значение')
     property = models.ForeignKey('CategoryProperty', on_delete=models.CASCADE, verbose_name='Характеристика')
     product = models.ForeignKey('Product', on_delete=models.CASCADE, verbose_name='Товар')
+    slug = models.SlugField(max_length=255, db_index=True, verbose_name="Слаг значения параметра", default="")
+
+    def save(self, *args, **kwargs):
+        if not self.id:
+            self.slug = slugify(str(self.name))
+        super().save(*args, **kwargs)
 
     class Meta:
         verbose_name = 'Значение'

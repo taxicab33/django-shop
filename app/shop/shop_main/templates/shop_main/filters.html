@@ -15,11 +15,11 @@
                         {%for value in category_props_values%}
                             {%if value.property == sub_prop%}
                                 <li>
-                                    {%if value.value in picked_filters|get_item:value.property.name %}
-                                    <input value="{{value.value}}" type="checkbox" checked="checked"
-                                           name="{{value.property.name}}" onchange="this.form.submit()">
+                                    {%if value.slug in picked_filters|get_item:value.property.slug %}
+                                    <input value="{{value.slug}}" type="checkbox" checked="checked"
+                                           name="{{value.property.slug}}" onchange="this.form.submit()">
                                     {%else%}
-                                    <input value="{{value.value}}" type="checkbox" name="{{value.property.name}}"
+                                    <input value="{{value.slug}}" type="checkbox" name="{{value.property.slug}}"
                                            onchange="this.form.submit()">
                                     {%endif%}
                                     {{value.value}} ({{value.count_products}})
